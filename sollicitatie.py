@@ -5,10 +5,20 @@ diploma = input("Bezit u in bezit van een Diploma MBO-4 ondernemen?")
 vrachtwagenRijbewijs = input("Bent u in bezit van een geldig vrachtwagen rijbewijs?")
 hogeHoed = input("Bezit u een hoge hoed?")
 geslacht = input("Bent u een man of vrouw?")
-snor = input("Heeft u een snor?")
-moustacheWidth = int(input("Hoelang is uw snor?"))
-roodKrulhaar = input("Heeft u rood krulhaar?")
-KrulhaarWidth = int(input("Hoelang is uw krulhaar?"))
+
+if geslacht == "man":
+    snor = input("Heeft u een snor?")
+    if snor == "ja":
+        moustacheWidth = int(input("Hoelang is uw snor?"))
+    else:
+        moustacheWidth = 0 
+
+else: 
+    roodKrulhaar = input("Heeft u rood krulhaar?")
+    if roodKrulhaar == "ja":
+        KrulhaarWidth = int(input("Hoelang is uw krulhaar?"))
+    else:
+        KrulhaarWidth = 0
 lengte = int(input("Hoe lang bent u in?"))
 gewicht = int(input("Hoe zwaar bent u?"))
 certificaat = input("Heeft u een certificaat 'Overleven met gevaarlijk personeel'?")
