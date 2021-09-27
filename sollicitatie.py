@@ -19,7 +19,7 @@ else:
         KrulhaarWidth = int(input("Hoelang is uw krulhaar?"))
     else:
         KrulhaarWidth = 0
-lengte = int(input("Hoe lang bent u in?"))
+lengte = int(input("Hoe lang bent u?"))
 gewicht = int(input("Hoe zwaar bent u?"))
 certificaat = input("Heeft u een certificaat 'Overleven met gevaarlijk personeel'?")
 naam = input("Wat is uw naam:")
@@ -27,7 +27,7 @@ Italiaans = input("Spreekt u Italiaans?")
 Huisdieren = int(input("Hoeveel huisdieren heeft u?"))
 handstand = input("Kunt u de handstand?")
 
-Aangenomen = (dierenDressuur > 4 or jongleren > 5 or acrobatiek > 3)and(diploma == "ja")and(vrachtwagenRijbewijs == "ja")and(hogeHoed == "ja")and(geslacht == "man" or geslacht == "vrouw")and(snor == "ja" and moustacheWidth > 10)or(roodKrulhaar == "ja" and KrulhaarWidth > 20)and(lengte > 150)and(gewicht > 90)and(certificaat == "ja")
+Aangenomen = (dierenDressuur > 4 or jongleren > 5 or acrobatiek > 3)and(diploma == "ja")and(vrachtwagenRijbewijs == "ja")and(hogeHoed == "ja")and((geslacht == "man" and moustacheWidth > 10 or geslacht == "vrouw" and KrulhaarWidth > 20))and(lengte > 150)and(gewicht > 90)and(certificaat == "ja")
 
 if Aangenomen == True:
     print("U bent aangenomen!!!")
